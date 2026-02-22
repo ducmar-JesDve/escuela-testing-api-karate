@@ -1,0 +1,85 @@
+17:20:39.936 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @TEST-9
+17:20:40.079 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:20:41.090 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:20:41.165 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/users/users.feature - call by tag at line 9: CrearMascota
+17:20:41.436 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 143
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"id":1096,"category":{"id":1,"name":"Dogs"},"name":"Firulais","photoUrls":["string"],"tags":[{"id":1,"name":"friendly"}],"status":"available"}
+
+17:20:42.139 [main] DEBUG com.intuit.karate - response time in milliseconds: 696
+1 < 200
+1 < Date: Sat, 21 Feb 2026 22:20:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":1096,"category":{"id":1,"name":"Dogs"},"name":"Firulais","photoUrls":["string"],"tags":[{"id":1,"name":"friendly"}],"status":"available"}
+
+17:20:42.152 [main] INFO  com.intuit.karate - [print] {
+  "id": 1096,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "Firulais",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "friendly"
+    }
+  ],
+  "status": "available"
+}
+ 
+17:20:42.154 [main] INFO  com.intuit.karate - [print] 1096 
+17:20:42.166 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/1096
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.18)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:20:42.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 370
+1 < 200
+1 < Date: Sat, 21 Feb 2026 22:20:42 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":1096,"category":{"id":1,"name":"Dogs"},"name":"Firulais","photoUrls":["string"],"tags":[{"id":1,"name":"friendly"}],"status":"available"}
+
+17:20:42.539 [main] INFO  com.intuit.karate - [print] {
+  "id": 1096,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "Firulais",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "friendly"
+    }
+  ],
+  "status": "available"
+}
+ 
